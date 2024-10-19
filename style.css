@@ -1,0 +1,77 @@
+body{
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #b50a0a;
+}
+.container{
+    border:1px solid black;
+    padding:20px;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    box-shadow: 0 8px 16px rgba(0, 123, 255, 0.2);
+}
+#display{
+    width:100%;
+    height:50px;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Light display background */
+    color: #333;
+
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn, .clear-btn, .delete-btn, .equals-btn, .operator-btn{
+    margin: 3px 3px;
+    font-size: 25px;
+    width: 75px;
+    height: 75px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn{
+    background-color: #007BFF; 
+    color: white;
+}
+
+.clear-btn{
+    background-color: #ffc107; 
+    color: white;
+}
+
+.delete-btn{
+    background-color: #dc3545; 
+    color: white;
+}
+
+.operator-btn, .equals-btn{
+    background-color: #28a745; 
+    color: white;
+}
+
+.clear-btn:hover, .delete-btn:hover, .equals-btn:hover, .btn:hover, .operator-btn:hover{
+    background-color: #0056b3; 
+}
+
+.clear-btn:active, .delete-btn:active, .equals-btn:active, .btn:active, .operator-btn:active{
+    background-color: #004080; 
+}
